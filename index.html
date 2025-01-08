@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generador de CURP</title>
+  <link rel="stylesheet" href="css/estilos.css"> <!-- Si tienes un archivo CSS -->
+</head>
+<body>
+  <h1>Generador de CURP</h1>
+  <form id="curpForm">
+    <label for="option">Selecciona una opción:</label>
+    <select id="option">
+      <option value="random">Generar CURP aleatorio</option>
+      <option value="manual">Ingresar CURP manualmente</option>
+    </select>
+    <br><br>
+    <div id="manualCurpDiv" style="display: none;">
+      <label for="manualCurp">Ingresa tu CURP:</label>
+      <input type="text" id="manualCurp" name="manualCurp">
+    </div>
+    <br><br>
+    <button type="button" onclick="handleCurp()">Procesar</button>
+  </form>
+  <pre id="output"></pre>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
